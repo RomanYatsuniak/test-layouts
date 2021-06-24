@@ -1,0 +1,24 @@
+@import 'inc/default';
+@import 'inc/fonts';
+@import 'inc/vars';
+
+body {
+	color: $text;
+	font-size: $bodyfontsize;
+	font-family: $bodyfont;
+}
+
+@import 'layout';
+@import 'parts/header';
+@import 'parts/copyright';
+@import 'parts/registration';
+@import 'parts/contacts';
+@import 'parts/map';
+@import 'parts/video';
+@import 'parts/reviews';
+@import 'parts/course-about';
+@import 'parts/statistics';
+@import 'parts/mentors';
+
+@import 'components/titles';
+@import 'components/btns';

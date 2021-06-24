@@ -1,0 +1,16 @@
+.item-highlighted {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&-left, &-right {
+		width: 20px;
+		height: 2px;
+		background-color: $lightBlue;
+	}
+
+	&-right {
+		margin-left: 3px;
+	}
+}

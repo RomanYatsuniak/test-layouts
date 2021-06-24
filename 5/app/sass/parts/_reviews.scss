@@ -1,0 +1,126 @@
+
+.reviews {
+	padding-top: 61px;
+	padding-bottom: 60px;
+	background: url("./../../img/pricing-plans-background.png") no-repeat center;
+	background-size: cover;
+
+	&-header {
+		letter-spacing: 0.01px;
+		margin-bottom: 11px;
+
+		text-align: center;
+	}
+
+	.reviews-main-title {
+		text-align: center;
+		color: white;
+		margin-bottom: 28.5px;
+
+		@media (max-width: 767.98px) {
+			margin-bottom: 25px;
+		}
+	}
+
+	.reviews-highlighted {
+		margin-bottom: 86px;
+
+		@media (max-width: 767.98px) {
+			margin-bottom: 25px;
+		}
+	}
+
+	.slider {
+		.slick-dots {
+			position: absolute;
+			bottom: -16px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			justify-content: center;
+
+			li {
+				list-style: none;
+
+				button {
+					background-color: transparent;
+					margin: 0 11px;
+					width: 6px;
+					height: 6px;
+					border: 1px solid #999999;
+
+					border-radius: 50%;
+					font-size: 0;
+				}
+			}
+
+			li.slick-active button {
+				background-color: white;
+				width: 16px;
+				height: 16px;
+				border: 0;
+			}
+		}
+
+		.reviews-items {
+			margin-bottom: 154px;
+
+			.reviews-item {
+				.review-text {
+					color: white;
+					font-size: 24px;
+					line-height: 32px;
+					padding-right: 10px;
+					font-family: "SourceSansPro-Light", sans-serif;
+					margin-bottom: 24px;
+
+
+					@media (max-width: 767.98px) {
+						font-size: 18px;
+						margin-bottom: 12px;
+					}
+				}
+
+				.reviewer {
+					.reviewer-avatar {
+						@media (max-width: 767.98px) {
+							width: 30px;
+							height: auto;
+						}
+					}
+
+					&-info {
+						color: white;
+						margin-left: 23px;
+
+						.reviewer-name {
+							margin-top: -4px;
+							letter-spacing: 0.2px;
+						}
+
+						.reviewer-position {
+							margin-top: 12px;
+							letter-spacing: 0.2px;
+							text-transform: uppercase;
+							font-size: 14px;
+							font-family: "SourceSansPro-SemiBold", sans-serif;
+						}
+					}
+				}
+
+				@media (max-width: 1199.98px) {
+					margin-bottom: 40px;
+				}
+
+			}
+
+			@media (max-width: 767.98px) {
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		padding: 40px 0;
+	}
+}

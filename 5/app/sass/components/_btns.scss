@@ -1,0 +1,35 @@
+.btn {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+
+	&-blue {
+		border-radius: 3px;
+		text-transform: uppercase;
+		font-size: 14px;
+		padding: 14px 27px;
+		font-family: "SourceSansPro-Bold", sans-serif;
+		background-color: $lightBlue;
+		letter-spacing: 0.01px;
+		line-height: 1.5;
+
+
+	}
+
+	&-transparent {
+		padding: 14px 30px;
+		border-radius: 3px;
+		border: 1px solid #454449;
+		letter-spacing: 0.3px;
+		background-color: transparent;
+
+	}
+
+	@media (max-width: 991.98px) {
+		padding: 10px 20px;
+	}
+
+	@media (max-width: 767.98px) {
+		padding: 7px 16px;
+	}
+}

@@ -1,0 +1,93 @@
+@import "./../inc/vars";
+
+.course-about {
+	padding: 76px 0 94px 0;
+
+	&-title {
+		margin-bottom: 39px;
+		text-align: center;
+		color: $black;
+		font-weight: 400;
+		font-size: 34px;
+		line-height: 100%;
+
+		.course-name {
+			position: relative;
+
+			&::before {
+			}
+
+			&::after {
+			}
+		}
+
+		@media (max-width: 768px) {
+			font-size: 24px;
+		}
+	}
+
+	&-items {
+		margin: 0 28px;
+
+		.course-about-item {
+			flex: 1 1 auto;
+			text-align: center;
+
+			&:not(:last-child) {
+				margin-right: 70px;
+
+				@media (max-width: 1024px) {
+					margin: 0;
+				}
+			}
+
+			.course-about-study-block {
+
+				&-icon {
+					display: block;
+					margin: 0 auto 30px;
+				}
+
+				&-title {
+					color: $darkGrey;
+					margin: 0 auto;
+					font-weight: 400;
+					font-size: 20px;
+					line-height: 100%;
+					margin: 0 0 36px 0;
+					padding: 0 0 18px 0;
+					display: inline-block;
+					border-bottom: 1px solid $darkBlue;
+
+					@media (max-width: 768px) {
+						font-size: 14px;
+					}
+
+					@media (max-width: 1200px) {
+						font-size: 16px;
+						line-height: 100%;
+					}
+				}
+
+				&-description {
+					text-align: center;
+					font-size: 16px;
+					line-height: 150%;
+					font-family: "OpenSans-Light", sans-serif;
+
+					@media (max-width: 768px) {
+						font-size: 14px;
+					}
+				}
+			}
+
+			@media (max-width: 850px) {
+				padding: 0 10px;
+			}
+		}
+
+		@media (max-width: 1024px) {
+			flex-wrap: wrap;
+		}
+	}
+}

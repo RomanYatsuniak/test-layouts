@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 1;
+      }
+    </style>
+  </defs>
+  <image id="dribbble" class="cls-1" width="18" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABY0lEQVQ4jZVUYWfEQBB9zZ6UaDQspSUcx33r//8hpaWfrlJ3lKWVk+M0UhPvnbGi2mHtZmfmzZuZzF5N04RMAoDIVWW6AUDiGr0iB2oArAkmxy+eSwA1dwPZAfhcAooEMaM9gJbnZwBnFyxSFwhm7FBkTIzBE4APAAcar7P0EgOBukZAwTF5dbnvCVyTheSBjAbazqUoaGRgXV5AAG/cW9o9ArgH0DNop+YI6KxcnRiTG+qCa0LnmCfq44ottsstMSrXNcnIu7zwILsZCDQKdLDcTzz3XJbaHfeTA/nWQUAH14k8vS13dbdZsLsAlQs6sRD9wLRfyFp+Vrt65VosCWRRUfeuOrj/RkBWr2v7Llj50v0rG4IkRu95r3G4dUEjfVPhBrDlqnm3y1JV8SvXHI3RDKQBDKzJsAAiOWZN0LyNmjWjLWfL2Y+EF6Wp9C8vwG/PiBXSHPUD/vkZ8V3738MG4AcBL3elTKBIkgAAAABJRU5ErkJggg=="/>
+</svg>

@@ -1,0 +1,65 @@
+@import "./../inc/vars";
+
+.goods-card {
+	padding: 16px 21px;
+	flex-basis: calc(33% - 15px);
+	margin: 0 7.5px 20px 7.5px;
+	background-color: $gainsboro;
+
+	&-photo {
+		width: 100%;
+		height: auto;
+		display: block;
+		margin-bottom: 21px;
+	}
+
+	.goods-card-link {
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.45px;
+		color: $lightslategray;
+		display: block;
+		margin-bottom: 55px;
+
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
+	}
+
+	&-iteraction {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.goods-card-price {
+			line-height: 18px;
+			font-size: 28px;
+			color: #444444;
+			letter-spacing: 0.7px;
+			font-weight: 700;
+
+			@media (max-width: 768px) {
+				font-size: 22px;
+				line-height: 1.2;
+			}
+		}
+
+		.basket-btn {
+			width: 29px;
+			height: auto;
+			margin-right: 16px;
+		}
+	}
+
+	@media (max-width: 900px) {
+		flex-basis: calc(50% - 15px);
+	}
+
+	@media (max-width: 650px) {
+		flex-basis: calc(100% - 15px);
+	}
+
+}
+
+
+

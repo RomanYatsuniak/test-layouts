@@ -1,0 +1,59 @@
+@import "./../inc/vars";
+
+.statistics {
+	background-color: $lightBlue;
+	padding: 80px 0 86px 0;
+	color: $white;
+
+	.course-statistics-items {
+		display: flex;
+		justify-content: space-between;
+
+		.course-statistics-item {
+			flex: 1;
+			text-align: center;
+			line-height: 100%;
+
+			@media (max-width: 768px) {
+				flex: 50%;
+				margin-top: 20px;
+			}
+
+			&-icon {
+				width: 85px;
+				height: 60px;
+				margin-bottom: 32px;
+
+				@media (max-width: 768px) {
+					margin-bottom: 16px;
+				}
+			}
+
+			&-number {
+				font-size: 24px;
+				margin-bottom: 22px;
+
+				@media (max-width: 768px) {
+					margin-bottom: 12px;
+				}
+			}
+
+			&-text {
+				font-family: "OpenSans-Light", sans-serif;
+				font-weight: 100;
+
+				@media (max-width: 768px) {
+					font-size: 14px;
+				}
+			}
+		}
+
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	@media (max-width: 768px) {
+		padding: 10px 0 30px 0;
+	}
+}

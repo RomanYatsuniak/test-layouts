@@ -1,0 +1,60 @@
+@import "./../inc/vars";
+
+.contacts {
+	background-color: $lightBlue;
+	padding: 40px 0 44px 0;
+
+	&-list {
+		display: flex;
+		color: white;
+
+		.contacts-block {
+			flex: 1;
+			text-align: center;
+
+			.contacts-logo {
+				width: 50px;
+				height: 50px;
+				margin-bottom: 10px;
+
+				path {
+					background-color: red;
+					color: green;
+					fill: #fff;
+				}
+			}
+
+			@media (max-width: 768px) {
+				flex: 50%;
+				margin-top: 20px;
+			}
+		}
+
+		.contacts-title {
+			font-weight: 700;
+			margin-bottom: 2px;
+			letter-spacing: 1px;
+		}
+
+		.contacts-info {
+			font-family: "OpenSans-Light", sans-serif;
+			@media (max-width: 768px) {
+				font-size: 10px;
+			}
+
+			&-link {
+				text-decoration: none;
+				color: white;
+			}
+		}
+
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	@media (max-width: 768px) {
+		padding: 10px 0 30px 0;
+	}
+}
+

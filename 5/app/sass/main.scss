@@ -1,0 +1,32 @@
+@import 'inc/default';
+@import 'inc/fonts';
+@import 'inc/vars';
+
+body {
+	color: $text;
+	font-size: $bodyfontsize;
+	font-family: $bodyfont;
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+	}
+}
+
+@import 'layout';
+
+@import 'parts/header';
+@import 'parts/footer';
+@import 'parts/overview';
+@import 'parts/beautiful-device';
+@import 'parts/super-customize';
+@import 'parts/reviews';
+@import 'parts/get_theme';
+@import 'parts/plans';
+@import 'parts/contact-us';
+@import 'parts/map';
+@import 'parts/copyright';
+@import 'parts/contact-form';
+@import 'components/titles';
+@import 'components/emphasis';
+@import 'components/paragraphs';
+@import 'components/btns';

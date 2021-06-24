@@ -1,0 +1,43 @@
+@import "./../inc/vars";
+
+.copyright-wrapper {
+	padding: 50px 0 51px;
+	background-color: $whiteDarker;
+	font-family: "OpenSans-Light", sans-serif;
+
+	.copyright {
+		margin: 0 auto;
+		font-size: 18px;
+
+		text-align: center;
+
+		&-title {
+			color: $lightBlue;
+			margin-bottom: 18px;
+
+			.copyright-sign {
+				display: inline-block;
+				margin-right: 8px;
+			}
+
+			@media (max-width: 768px) {
+				margin-bottom: 5px;
+			}
+		}
+
+		.privacy {
+			&-link {
+				color: #939393;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
+	}
+}

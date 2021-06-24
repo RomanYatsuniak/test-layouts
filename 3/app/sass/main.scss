@@ -1,0 +1,31 @@
+@import 'inc/default';
+@import 'inc/fonts';
+@import 'inc/vars';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body,
+html {
+	color: $text;
+	font-size: $bodyfontsize;
+	font-family: 'PT Sans', sans-serif;
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.content-wrapper {
+	flex: 1 0 auto;
+}
+
+@import 'layout';
+@import 'parts/header';
+@import 'parts/footer';
+@import 'parts/menu';
+@import 'parts/slider';
+@import 'parts/footer';
+@import 'parts/content';
+@import 'parts/card';
+@import 'parts/feedback';
+

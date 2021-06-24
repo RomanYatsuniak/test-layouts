@@ -1,0 +1,64 @@
+.super-customize {
+	padding-top: 64px;
+	background-color: #f2f2f2;
+	padding-bottom: 30px;
+
+	&-header {
+		margin-top: 66px;
+		margin-bottom: 10px;
+
+		@media (max-width: 991.98px) {
+			margin: 0;
+		}
+
+		@media (max-width: 767.98px) {
+			margin-top: 0;
+			text-align: center;
+		}
+	}
+
+
+	.super-customize-main-title {
+		margin-bottom: 28px;
+		letter-spacing: 0.1px;
+
+		@media (max-width: 767.98px) {
+			text-align: center;
+			margin-bottom: 25px;
+		}
+	}
+
+	.super-customize-highlighted {
+		margin-bottom: 23px;
+
+		@media (max-width: 767.98px) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&-text {
+		letter-spacing: 0.04px;
+
+		@media (max-width: 767.98px) {
+			margin: 0;
+		}
+	}
+
+	.super-customize-image {
+		max-width: 100%;
+		height: auto;
+		margin-top: -17px;
+		transform: scale(1.05);
+
+		@media (max-width: 991.98px) {
+			margin: 0;
+			width: 100%;
+			transform: scale(1);
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		padding: 40px 0;
+	}
+
+}

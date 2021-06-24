@@ -1,0 +1,73 @@
+@import "./../inc/vars";
+
+.students-reviews {
+	padding-top: 76px;
+	padding-bottom: 40px;
+	text-align: center;
+
+	.slider {
+		&-item {
+			.students-reviews-text {
+				font-size: 22px;
+				line-height: 34px;
+				padding: 0 49px;
+				margin: 38px 123px 42px 123px;
+				font-family: "OpenSans-Light", sans-serif;
+				color: #666666;
+				position: relative;
+
+				&::before, &::after {
+					width: 30px;
+					height: 27px;
+					content: '';
+					position: absolute;
+					@media (max-width: 768px) {
+						width: 14px;
+						height: 22px;
+					}
+				}
+
+				&::before {
+					background: url(./../../img/quote-left-solid.svg) no-repeat center;
+					top: 0;
+					left: 0;
+				}
+
+				&::after {
+					background: url(./../../img/quote-right-solid.svg) no-repeat center;
+					bottom: 0;
+					right: 0;
+				}
+
+				@media (max-width: 768px) {
+					padding: 0 20px;
+					font-size: 14px;
+					line-height: 120%;
+					margin: 10px 0 10px 0;
+				}
+			}
+
+			.review-author-name {
+				color: $black;
+				line-height: 100%;
+				margin-bottom: 10px;
+			}
+
+			.review-author-position {
+				font-style: italic;
+				font-family: "OpenSans-Light", sans-serif;
+				line-height: 100%;
+				margin-bottom: 30px;
+
+				@media (max-width: 768px) {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+
+//@keyframes fade {
+//	from {opacity: .4}
+//	to {opacity: 1}
+//}

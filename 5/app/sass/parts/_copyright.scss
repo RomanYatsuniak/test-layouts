@@ -1,0 +1,32 @@
+.copyright {
+	background-color: black;
+	padding-top: 54px;
+	padding-bottom: 44px;
+
+	&-items {
+		margin-bottom: 29px;
+
+		.copyright-item {
+			margin: 0 17px;
+
+			@media (max-width: 575.98px) {
+				margin: 0 10px;
+			}
+		}
+
+
+	}
+
+	&-text {
+		text-align: center;
+		font-size: 14px;
+		margin: 0;
+		font-family: "SourceSansPro-Bold", sans-serif;
+		color: #444348;
+		text-transform: uppercase;
+	}
+
+	@media (max-width: 767.98px) {
+		padding: 20px 0;
+	}
+}

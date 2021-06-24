@@ -1,0 +1,104 @@
+@import "./../inc/vars";
+
+.header {
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+	z-index: 10;
+	position: sticky;
+	top: 0;
+	background-color: $white;
+
+	.navbar {
+		width: 100%;
+		padding: 10px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+
+		.school-logo {
+			width: 80px;
+			height: 80px;
+
+			@media (max-width: 768px) {
+				width: 60px;
+				height: 60px;
+			}
+		}
+
+		.navbar-list {
+			list-style-type: none;
+			transition: all 0.8s linear;
+			padding: 0;
+			margin: 0;
+			display: flex;
+
+			&-item {
+
+				&-link {
+					padding: 10px 17px;
+					text-decoration: none;
+					color: $textDarken;
+					display: inline-block;
+
+					&:hover {
+						color: #367cb8;
+						background-color: #eeeeee;
+					}
+
+					@media (max-width: 1024px) {
+						padding: 10px 8px;
+					}
+
+					@media (max-width: 768px) {
+						padding: 10px 17px;
+					}
+				}
+
+				.highlighted-navbar-item {
+					border-radius: 25px;
+					background-color: $darkBlue;
+					color: $white;
+
+					&:hover {
+						background-color: #286090;
+					}
+				}
+
+			}
+
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
+
+		&-toggle {
+			display: none;
+			border: 0;
+			background-color: $darkBlue;
+			padding: 9px 10px;
+			border-radius: 2px;
+			cursor: pointer;
+
+			.icon-bar {
+				background-color: $white;
+				display: block;
+				height: 2px;
+				width: 22px;
+			}
+
+			:not(:last-child) {
+				margin-bottom: 4px;
+			}
+
+			@media (max-width: 768px) {
+				display: block;
+			}
+		}
+
+		@media (max-width: 768px) {
+			padding: 5px 0;
+		}
+
+
+	}
+}

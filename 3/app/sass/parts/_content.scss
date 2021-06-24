@@ -1,0 +1,177 @@
+@import '../inc/vars';
+
+.content {
+	.categories-path-items {
+		margin-top: 10px;
+
+		.categories-path-item {
+			letter-spacing: .35px;
+			color: $darkgray;
+			line-height: 18px;
+			text-decoration: none;
+
+			&:not(:last-child) {
+				text-decoration: underline;
+
+				&::after {
+					content: '/';
+					display: inline-block;
+					text-decoration: none;
+					padding: 0 8px 0 5px;
+					color: $darkgray;
+				}
+			}
+		}
+	}
+
+	.main-block {
+		margin-top: 26px;
+		display: flex;
+
+		.main-block-left-col {
+			margin-right: 22px;
+			min-width: 178px;
+
+			.category-list-item {
+				line-height: 30px;
+
+				&:hover {
+
+					.category-list-title {
+						text-decoration: underline;
+					}
+
+					.categories-subcategory {
+						display: block;
+						line-height: 22px;
+					}
+				}
+			}
+
+			.category-list-title {
+				font-size: 18px;
+				color: #767676;
+				display: block;
+				cursor: pointer;
+
+				@media (max-width: 768px) {
+					font-size: 16px;
+				}
+			}
+
+			.categories-subcategory {
+				display: none;
+				list-style-type: disc;
+				padding-left: 18px;
+				font-size: 14px;
+				margin: 0;
+				color: #767676;
+
+				&-item {
+
+					&::before {
+						color: #767676;
+					}
+
+					&-link {
+						color: #767676;
+
+						&:hover {
+							text-decoration: underline;
+							color: black;
+							font-weight: 700;
+						}
+					}
+				}
+			}
+
+			.price-list {
+				margin-top: 110px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				&-logo {
+					display: block;
+				}
+
+				&-title {
+					display: block;
+					color: #444444;
+					font-size: 30px;
+					font-weight: 700;
+					line-height: 25px;
+					text-align: center;
+					margin-top: 6px;
+				}
+
+				@media (max-width: 550px) {
+					margin: 20px 0 20px;
+				}
+			}
+
+			@media (max-width: 550px) {
+				margin-right: 0;
+			}
+		}
+
+		.main-block-right-col {
+			width: 100%;
+
+			.card-items-wrapper {
+
+				.card-items {
+					display: flex;
+					flex-wrap: wrap;
+					margin-left: -7.5px;
+					margin-right: -7.5px;
+				}
+			}
+
+			.pages {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				margin: 12px 0 67px 0;
+				letter-spacing: 7.91px;
+
+				.page-item {
+					display: inline-block;
+					margin: 0 11px;
+				}
+
+				.current-page {
+					font-size: 18px;
+					color: #444444;
+				}
+			}
+
+			.company-description {
+				display: flex;
+				margin: 29px 0 202px 0;
+
+				&-col {
+					flex: 1;
+
+					&:not(:last-child) {
+						margin-right: 39px;
+						letter-spacing: 0.33px;
+
+						@media (max-width: 768px) {
+							margin-right: 0;
+							margin-bottom: 30px;
+						}
+					}
+				}
+
+				@media (max-width: 768px) {
+					flex-direction: column;
+				}
+			}
+		}
+
+		@media (max-width: 550px) {
+			flex-direction: column;
+		}
+	}
+}

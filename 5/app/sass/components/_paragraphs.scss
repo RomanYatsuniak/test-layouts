@@ -1,0 +1,9 @@
+.details-paragraph {
+	font-size: 18px;
+	color: #b7b7b7;
+	line-height: 26px;
+
+	@media (max-width: 767.98px) {
+		font-size: 14px;
+	}
+}

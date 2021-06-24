@@ -1,0 +1,92 @@
+.beautiful-device {
+	padding-top: 74px;
+	padding-bottom: 19px;
+
+	&-image {
+		max-width: 100%;
+		margin-left: 20px;
+		margin-top: -6px;
+		height: auto;
+
+		@media (max-width: 991.98px) {
+			margin: 0;
+			width: 100%;
+		}
+	}
+
+	&-header {
+		margin: 45px 0 10px 0;
+		letter-spacing: 0.1px;
+
+		@media (max-width: 767.98px) {
+			text-align: center;
+			margin-top: 0;
+		}
+	}
+
+	.beautiful-device-main-title {
+		margin-bottom: 25px;
+
+		@media (max-width: 767.98px) {
+			text-align: center;
+		}
+	}
+
+	.beautiful-device-highlighted {
+		margin-bottom: 25px;
+	}
+
+	&-text {
+		margin-bottom: 34px;
+
+
+	}
+
+	&-list-items {
+		list-style-type: none;
+		padding: 0;
+		margin: 0 auto;
+
+		.beautiful-device-list-item {
+			display: flex;
+			align-items: center;
+
+			&:not(:last-child) {
+				margin-bottom: 18px;
+
+			}
+
+			&-icon-wrapper {
+				margin-right: 9px;
+				width: 17px;
+				height: 17px;
+				position: relative;
+
+				.beautiful-device-list-item-icon {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translateX(-50%) translateY(-50%);
+				}
+			}
+
+			&-name {
+				font-size: 18px;
+
+				@media (max-width: 767.98px) {
+					font-size: 14px;
+				}
+			}
+
+			@media (max-width: 767.98px) {
+				justify-content: center;
+
+			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}

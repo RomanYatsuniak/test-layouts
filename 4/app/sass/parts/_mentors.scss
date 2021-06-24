@@ -1,0 +1,95 @@
+@import "./../inc/vars";
+
+.course-mentors {
+	padding: 71px 0 66px 0;
+
+	.slider-items {
+
+		.slider-item {
+
+			.course-mentors-block {
+				display: flex;
+				margin-bottom: 21px;
+
+				.mentor-photo-wrapper {
+					margin: 0 70px;
+
+					.mentor-photo {
+						max-width: 342px;
+						height: auto;
+						display: block;
+
+						@media (max-width: 768px) {
+							width: 50%;
+							margin: 0 auto;
+						}
+					}
+
+					@media (max-width: 1024px) {
+						margin: 0;
+					}
+				}
+
+				.mentor-info {
+					padding: 30px 12px 0 30px;
+					line-height: 160%;
+
+					.mentor-name {
+						color: $lightBlue;
+						font-size: 20px;
+						margin-bottom: 16px;
+
+						@media (max-width: 768px) {
+							font-size: 18px;
+							text-align: center;
+							margin-bottom: 0px;
+						}
+					}
+
+					.mentors-horizontal-line {
+						height: 1px;
+						color: $whiteDarker;
+						display: block;
+						border: 0;
+						background-color: $whiteDarker;
+					}
+
+					.mentor-about-wrapper {
+						margin-top: 30px;
+
+						.mentor-about {
+							&:not(:last-child) {
+								margin-bottom: 10px;
+							}
+						}
+
+						@media(max-width: 768px) {
+							font-size: 14px;
+							text-align: center;
+						}
+					}
+
+					@media (max-width: 768px) {
+						padding-left: 0;
+						padding-right: 0;
+					}
+				}
+
+				@media (max-width: 768px) {
+					flex-direction: column;
+				}
+			}
+		}
+
+	}
+
+	@media (max-width: 768px) {
+		padding: 30px 0 15px 0;
+	}
+}
+
+
+
+
+
+
